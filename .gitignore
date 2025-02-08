@@ -1,0 +1,20 @@
+# Node.js dependencies
+node_modules/
+package-lock.json
+
+# TypeScript build output
+dist/
+
+# Editor/IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jest cache and coverage reports
+jest-cache/
+coverage/
+
+# OS-specific files
+.DS_Store
+Thumbs.db

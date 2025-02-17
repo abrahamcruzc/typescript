@@ -1,5 +1,5 @@
 function arrayManipulation(n: number, queries: number[][]): number {
-  let arr: number[] = new Array(n).fill(0);
+  let arr: number[] = new Array(n + 1).fill(0);
 
   for (let i = 0; i < queries.length; i++) {
     let a = queries[i][0];
@@ -10,6 +10,7 @@ function arrayManipulation(n: number, queries: number[][]): number {
     if (b < n) {
       arr[b] -= k;
     }
+    console.log(arr)
   }
 
   let maxValue = Number.MIN_SAFE_INTEGER;
@@ -21,6 +22,7 @@ function arrayManipulation(n: number, queries: number[][]): number {
       maxValue = current;
     }
   }
+  console.log(arr)
 
   return maxValue;
 }

@@ -1,5 +1,5 @@
 function arrayManipulation(n, queries) {
-    var arr = new Array(n).fill(0);
+    var arr = new Array(n + 1).fill(0);
     for (var i = 0; i < queries.length; i++) {
         var a = queries[i][0];
         var b = queries[i][1];
@@ -8,6 +8,7 @@ function arrayManipulation(n, queries) {
         if (b < n) {
             arr[b] -= k;
         }
+        console.log(arr);
     }
     var maxValue = Number.MIN_SAFE_INTEGER;
     var current = 0;
@@ -17,6 +18,7 @@ function arrayManipulation(n, queries) {
             maxValue = current;
         }
     }
+    console.log(arr);
     return maxValue;
 }
 var n = 10;
